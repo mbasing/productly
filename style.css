@@ -9,15 +9,12 @@ html {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-#root {
-  margin-right: 2rem;
-}
-
 .product__list {
   font-size: 80%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1rem;
+  margin-right: 2rem;
 }
 
 .product-item {
@@ -35,7 +32,7 @@ html {
 }
 
 .product-item img:hover {
-  transform: scale(1.05);
+  transform: scale(0.98);
 }
 
 .product-item h2 {
@@ -46,7 +43,6 @@ html {
 
 .product-item h3 {
   color: chocolate;
-  font-size: 1.2rem;
   text-align: center;
   margin: 0;
 }
@@ -74,11 +70,13 @@ button {
   border: 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   border-radius: 5px;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
   font: inherit;
   cursor: pointer;
   outline: 0;
   margin-top: 0.5rem;
+  font-size: 10px;
+  font-weight: 600;
 }
 
 button:hover,
@@ -96,4 +94,43 @@ button:last-of-type:hover,
 button:last-of-type:active:hover {
   background-color: red;
   color: white;
+}
+
+.cart {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  padding: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.cart i {
+  color: teal;
+  text-decoration-line: none;
+}
+
+.cart span {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  background-color: #333;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 3px;
+  margin-left: 0.3rem;
+  color: white;
+}
+
+#logo {
+  width: 120px;
+  margin-left: 2rem;
+}
+
+#viewcart {
+  margin-right: 2rem;
+}
+
+#delete_product {
+  color: red;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
 }

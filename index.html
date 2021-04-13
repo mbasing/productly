@@ -10,11 +10,22 @@
       integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
       crossorigin="anonymous"
     />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
     <link rel="stylesheet" href="style.css" />
     <title>Productly</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div class="cart">
+        <div id="logo">
+          <img src="./assets/logo.svg" alt="logo" />
+        </div>
+        <div id="viewcart">
+          <i class="fas fa-cart-plus" id="cart"></i>
+          <span id="card">0</span>
+        </div>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

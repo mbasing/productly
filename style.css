@@ -128,7 +128,7 @@ button:last-of-type:active:hover {
   margin-right: 2rem;
 }
 
-#delete_product {
+.delete_product {
   color: red;
   cursor: pointer;
   display: flex;
